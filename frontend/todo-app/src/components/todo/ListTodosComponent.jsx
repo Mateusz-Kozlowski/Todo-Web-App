@@ -72,7 +72,6 @@ function ListTodosComponent() {
                         todos.map(
                             todo => (
                                 <tr key={todo.id}>
-                                    <td>{todo.id}</td>
                                     <td>{todo.description}</td>
                                     <td>{todo.done.toString()}</td>
                                     {/* <td>{todo.targetDate.toDateString()}</td> */}
