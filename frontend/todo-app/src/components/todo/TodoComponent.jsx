@@ -105,7 +105,7 @@ export default function TodoComponent() {
 
                             <fieldset className="form-group">
                                 <label>Description</label>
-                                <Field type="text" className="form-control" name="description"></Field>
+                                <Field type="text" className="form-control" name="description" autoComplete="off"></Field>
                             </fieldset>
                             <fieldset className="form-group">
                                 <label>Target Date</label>

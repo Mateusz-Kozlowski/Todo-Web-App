@@ -61,7 +61,6 @@ function ListTodosComponent() {
                     <thead>
                         <tr>
                             <th>description</th>
-                            <th>is Done?</th>
                             <th>Target Date</th>
                             <th>Delete</th>
                             <th>Update</th>
@@ -73,8 +72,6 @@ function ListTodosComponent() {
                             todo => (
                                 <tr key={todo.id}>
                                     <td>{todo.description}</td>
-                                    <td>{todo.done.toString()}</td>
-                                    {/* <td>{todo.targetDate.toDateString()}</td> */}
                                     <td>{todo.targetDate.toString()}</td>
                                     <td> 
                                         <button className="btn btn-warning" onClick={() => deleteTodo(todo.id)}>
